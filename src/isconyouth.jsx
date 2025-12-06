@@ -150,7 +150,7 @@ export function IsconYouthForm() {
             type="submit"
             className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-3 px-4 rounded-lg shadow-lg hover:from-pink-600 hover:to-red-600 transition-transform transform hover:scale-105"
           >
-          {issubmit?"submit":"submitting..."} 
+          {sub?"submit":"submitting..."} 
           </button>
         </form>
       </div>
