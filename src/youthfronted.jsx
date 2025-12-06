@@ -6,7 +6,7 @@ export function YouthList() {
 
   // Fetch all entries
   useEffect(() => {
-    axios.get("http://localhost:5000/api/youths")
+    axios.get("https://iskconbackend.onrender.com/api/youths")
       .then(res => setYouths(res.data))
       .catch(err => console.error("Error fetching data:", err));
   }, []);
