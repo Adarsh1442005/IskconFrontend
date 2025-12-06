@@ -14,7 +14,7 @@ export function YouthList() {
   // Delete by email
   const handleDelete = async (email) => {
     try {
-      await axios.delete(`http://localhost:5000/api/youths/${email}`);
+      await axios.delete(`https://iskconbackend.onrender.com/api/youths/${email}`);
       alert("User deleted successfully!");
       setYouths(youths.filter(y => y.email !== email)); // update UI
     } catch (error) {
