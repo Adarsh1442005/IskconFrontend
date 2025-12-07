@@ -7,7 +7,7 @@ export function YouthList() {
   // Fetch all entries
   useEffect(() => {
     axios
-      .get("https://iskconbackend.onrender.com/api/youths")
+      .get("https://iskconbackend.vercel.app/api/youths")
       .then((res) => setYouths(res.data))
       .catch((err) => console.error("Error fetching data:", err));
   }, []);
@@ -15,7 +15,7 @@ export function YouthList() {
   // Delete by email
   const handleDelete = async (email) => {
     try {
-      await axios.delete(`https://iskconbackend.onrender.com/api/youths/${email}`);
+      await axios.delete(`https://iskconbackend.vercel.app/api/youths/${email}`);
       alert("User deleted successfully!");
       setYouths(youths.filter((y) => y.email !== email)); // update UI
     } catch (error) {
