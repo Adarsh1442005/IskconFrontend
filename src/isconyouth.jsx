@@ -21,7 +21,7 @@ export function IsconYouthForm() {
     try {
       issubmit(false);
       const response = await axios.post(
-        "https://iskconbackend.onrender.com/api/youth-form",
+        "https://iskconbackend.vercel.app/api/youth-form",
         formData
       );
       console.log("Server response:", response.data);
